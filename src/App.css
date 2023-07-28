@@ -1,38 +1,99 @@
-.App {
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.div{
+  background-color: black;
+  color: white;
+}
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 6px;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 4px;
+}
+.calendar-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.react-calendar {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar__tile {
+  padding: 4px;
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: #fff;
+}
+.react-calendar__tile--range {
+  box-shadow: 0 0 6px 2px black;
+}
+/* Estilos para la lista de reservas */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.booking-table th {
+  background-color: #f9f9f9;
+}
+
+.booking-table td {
+  background-color: #fff;
+}
+
+.booking-item {
+  font-weight: bold;
+}
+th {
+  background-color: Black;
+  color: black;
+}
+.logo {
+  display: block; /* Asegura que el logotipo respete el espacio de los elementos */
+  margin: 0 auto; /* Centra horizontalmente el logotipo */
+  max-width: 100px; /* Ajusta el tamaño máximo del logotipo */
+  mix-blend-mode:screen;
 }
